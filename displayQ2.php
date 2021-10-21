@@ -56,7 +56,7 @@
     $sql = "INSERT INTO employeeTables (name)
     VALUES ('$userName')";
     // still trying to put more values
-    $sql = "INSERT INTO employeeTables (dob)
+    $sql = "INSERT INTO employeeTables (name, dob, age,username,Password,Salary,Bonus,Leave_days,leave_days_proof,mc,mcproof,claims,claimsproof)
     VALUES ('$userName','$userDob', '$userAge','$userUsername','$userPw','$userSalary','$userBonus','$userLeaveDays','$userLeaveDaysProof','$userMC','$userMCProof','$userClaims','$userClaimsProof')";
 
     if ($conn->query($sql) === TRUE) {
